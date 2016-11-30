@@ -28,15 +28,12 @@ function inspect(options){
             var inData = files[filePath];
 
             if (options.fileFilter(filePath, inData, metalsmith)) {
-               var outData = inData;  // guess they want all data
-               if (options.accept) {
-                  outData = {};
-                  Object.keys(inData).forEach(function(key) {
-                     if (options.accept(key, inData)) {
-                        outData[key] = inData[key];
-                     }
-                  });
-               }
+               var outData = {};
+               Object.keys(inData).forEach(function(key) {
+                  if (options.accept(key, inData)) {
+                     outData[key] = inData[key];
+                  }
+               });
 
                if (!options.contentsAsBuffer && outData.contents)
                outData.contents = inData.contents.toString();
@@ -76,7 +73,7 @@ function inspect(options){
          options.accept = function(propKey) { return options.exclude.indexOf(propKey) < 0; };
       }
       else {
-         options.accept = null;
+         options.accept = function() { return true; };
       }
    }
 

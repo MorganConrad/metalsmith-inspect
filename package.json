@@ -1,10 +1,10 @@
 {
   "name": "metalsmith-inspect",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Metasmith plugin to inspect/debug your file objects",
   "main": "inspect.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
     "file",
     "objects"
   ],
+  "devDependencies": {
+    "tape": "^4.6"
+  },
   "author": "Morgan Conrad <flyingspaniel@gmail.com> (http://flyingspaniel.com/)",
   "license": "MIT",
   "bugs": {

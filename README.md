@@ -1,3 +1,8 @@
+[![Build Status](https://secure.travis-ci.org/MorganConrad/metalsmith-inspect.png)](http://travis-ci.org/MorganConrad/metalsmith-inspect)
+[![License](http://img.shields.io/badge/license-MIT-A31F34.svg)](https://github.com/MorganConrad/metalsmith-inspect)
+[![NPM Downloads](http://img.shields.io/npm/dm/metalsmith-inspect.svg)](https://www.npmjs.org/package/metalsmith-inspect)
+
+
 # metalsmith-inspect
 A [Metalsmith]("http://www.metalsmith.io/") plugin to inspect your file objects.
 Similar to [metalsmith-debug](https://www.npmjs.com/package/metalsmith-debug), but offers some other options (and missing some too!).  **Inspect's** usage is more explicit, with no need to set a DEBUG environment variable.  No spooky action at a distance.  YMMV.
