@@ -21,7 +21,7 @@ CLI: Haven't tested it yet.  You'd lose a few options since it can't support fun
 
 #### General options
 
-**options.fileFilter** determines which files will be included
+**options.filter** determines which files will be included
  - if missing, include all files.
  - if a string or Regex, only include matching filePaths.
  - if a user-provided-function, include the file when `filter(filePath, data, metalsmith)` returns true.  
