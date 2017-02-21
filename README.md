@@ -5,9 +5,10 @@
 
 # metalsmith-inspect
 A [Metalsmith](http://www.metalsmith.io/) plugin to inspect your file objects.
-Similar to [metalsmith-debug](https://www.npmjs.com/package/metalsmith-debug), but offers some other options (and missing some too!).  **Inspect's** usage is more explicit, with no need to set a DEBUG environment variable.  No spooky action at a distance.  YMMV.
-
-Also, this converts the value of `contents` to a String, far more human-readable than an array of ASCII codes.
+Similar to [metalsmith-debug](https://www.npmjs.com/package/metalsmith-debug), but:
+ * prints the value of `contents` as a human readable _String_, not an array of ASCII codes
+ * usage is more explicit, with no need to set a DEBUG environment variable.  No spooky action at a distance.
+ * offers some different options.  _e.g._, control over which fields are included and how to print them.
 
 By default, **inspect** collects all the file objects into a bigJSObject, then calls `console.dir(bigJSObject)` (_i.e._ `util.inspect()`).
 
