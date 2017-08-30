@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-inspect",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Metasmith plugin to inspect/debug your file objects",
   "main": "inspect.js",
   "scripts": {
