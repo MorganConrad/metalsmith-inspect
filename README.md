@@ -2,6 +2,7 @@
 [![License](http://img.shields.io/badge/license-MIT-A31F34.svg)](https://github.com/MorganConrad/metalsmith-inspect)
 [![NPM Downloads](http://img.shields.io/npm/dm/metalsmith-inspect.svg)](https://www.npmjs.org/package/metalsmith-inspect)
 [![Known Vulnerabilities](https://snyk.io/test/github/morganconrad/metalsmith-inspect/badge.svg)](https://snyk.io/test/github/morganconrad/metalsmith-inspect)
+[![Coverage Status](https://coveralls.io/repos/github/MorganConrad/metalsmith-inspect/badge.svg)](https://coveralls.io/github/MorganConrad/metalsmith-inspect)
 
 # metalsmith-inspect
 A [Metalsmith](http://www.metalsmith.io/) plugin to inspect your file objects.
