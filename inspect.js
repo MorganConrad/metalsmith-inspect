@@ -24,24 +24,23 @@ function inspect(options){
             bigJSObject[options.includeMetalsmith] = metalsmith.metadata();
          }
 
-         Object.keys(files).forEach(function(filePath){
-            var inData = files[filePath];
+         for (let [filePath, fileData] of Object.entries(files)) {
 
-            if (options.fileFilter(filePath, inData, metalsmith)) {
+            if (options.fileFilter(filePath, fileData, metalsmith)) {
                var outData = {};
-               Object.keys(inData).forEach(function(key) {
-                  if (options.accept(key, inData)) {
-                     outData[key] = inData[key];
+               for (let [key, value] of Object.entries(fileData)) {
+                  if (options.accept(key, fileData)) {
+                     outData[key] = value;
                   }
-               });
+               };
 
                if (!options.contentsAsBuffer && outData.contents)
-               outData.contents = inData.contents.toString();
+                 outData.contents = fileData.contents.toString();
 
                bigJSObject[filePath] = outData;
             }
 
-         });
+         };
 
          options.printfn(bigJSObject);
          done();
