@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-inspect",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Metasmith plugin to inspect/debug your file objects",
   "main": "inspect.js",
   "scripts": {
@@ -21,8 +21,9 @@
   "devDependencies": {
     "coveralls": "^3.1",
     "nyc": "^15.1.0",
-    "tape": "^5.2"
+    "tape": "^5.3"
   },
+  "files": [],
   "author": "Morgan Conrad <flyingspaniel@gmail.com> (http://flyingspaniel.com/)",
   "license": "MIT",
   "bugs": {
